@@ -1,0 +1,48 @@
+main {
+  padding: 1rem;
+}
+
+.burger1 {
+  position: fixed;
+  z-index: 100;
+  top: 4rem;
+  right: 4rem;
+  padding: 1rem;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu1 {
+  position: fixed;
+  transform: translateY(-120%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: black;
+  list-style: none;
+  padding-top: 8rem;
+}
+a {
+  color: white;
+}
+.showMenu {
+  transform: translateY(0);
+}
+/*
+#burger {
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+*/

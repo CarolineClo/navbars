@@ -15,7 +15,6 @@
     <header></header>
     <main>
       <nav id="nav1">
-        <i class="material-icons">home</i>
         <ul class="menu1">
           <li><a class="menu1Item" href="#">Home</a></li>
           <li><a class="menu1Item" href="#">Profile</a></li>
@@ -27,8 +26,49 @@
           <i class="material-icons closeIcon">close</i>
         </button>
       </nav>
-    </main>
+      <!--second example-->
+      <nav class="nav2">
+        <div class="mobileNav">
+          <i class="material-icons" id="logo">home</i>
 
+          <button class="icon">
+            <i class="material-icons" id="hamb">menu</i>
+          </button>
+        </div>
+        <ul class="hidden" id="navDesk">
+          <li class="linkItem">Home</li>
+          <li class="linkItem">Shop</li>
+          <li class="linkItem">About</li>
+          <li class="linkItem">Contact</li>
+        </ul>
+      </nav>
+
+      <!--third example-->
+      <div id="header3">
+        <div id="brand"><a href="">My Brand</a></div>
+        <nav id="nav3">
+          <ul class="list3">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="burgerIcon3" class="nav3" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="list3 mobileNav3">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="nav3.js"></script>
+    <script src="nav2.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

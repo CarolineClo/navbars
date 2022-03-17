@@ -46,8 +46,8 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   padding: 0.5rem;
-  border: black solid 1px;
-  background: white;
+  border: var(--purple-color) solid 1px;
+  background: var(--yellow-color);
   cursor: pointer;
 }
 
@@ -64,7 +64,7 @@ h1 {
   right: 0;
   bottom: 0;
   z-index: 100;
-  background: black;
+  background: var(--pale-color);
   list-style: none;
   padding: 8rem 0;
   text-align: center;
@@ -184,6 +184,7 @@ li {
   font-family: var(--serious-font);
   font-weight: 900;
   font-size: 2rem;
+  color: var(--purple-color);
 }
 
 .list3 {
@@ -212,7 +213,7 @@ li {
 .mobileNav3 {
   display: none;
   position: absolute;
-  top: 48%;
+  top: 40%;
   left: 1.2rem;
 }
 
@@ -226,13 +227,17 @@ li {
 }
 /*nav bar 4*/
 
+#header4 {
+  margin-top: 16rem;
+}
+
 .main4 {
   margin-left: 5rem;
   padding: 1rem;
 }
 
 .nav4 {
-  position: fixed;
+  position: absolute;
   background-color: var(--yellow-color);
   transition: width 0.2s ease;
 }
@@ -277,6 +282,7 @@ li {
   .nav4 {
     width: 5rem;
     height: 100vh;
+    margin: 1rem 0 0 0;
   }
   .nav4:hover {
     width: 14rem;
@@ -293,8 +299,9 @@ li {
 
 @media only screen and (max-width: 600px) {
   .nav4 {
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 2rem);
     height: 5rem;
   }
 
@@ -308,5 +315,9 @@ li {
 
   svg {
     height: 3rem;
+  }
+
+  .main4 {
+    margin: 0 0 4rem 0;
   }
 }
